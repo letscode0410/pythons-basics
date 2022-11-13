@@ -70,3 +70,5 @@ print(dict3)
 #how to check whether key presents in the dictionary
 
 print('b' in dict3.keys())
+
+print(type(dict3.keys()))
