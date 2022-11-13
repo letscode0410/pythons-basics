@@ -14,3 +14,5 @@ print(set_new)
 #{'r', 'a', 'k', 'u', 'v', 'm', 'i'}
 set_new=set("ravikumar")
 print(set_new)
+
+print(set([1,1,2,3]))
