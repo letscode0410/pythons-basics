@@ -1,3 +1,6 @@
+my_dict={}
+print(type(my_dict))
+
 my_dict={'key1':'value1','key2':'value2'}
 
 print(my_dict)
@@ -19,3 +22,17 @@ print(d['k2'][2])
 print(d.keys())
 print(d.values())
 print(d.items())
+
+#***************************************************
+print("**"*30)
+
+
+person_dict={}
+
+person_dict["name"]="Ravi Kumar"
+person_dict["age"]=30
+person_dict["skills"] = ["python","scala","spark","sql"]
+
+print(person_dict)
+person_dict["skills"].append("AWS")
+print(person_dict["skills"])
