@@ -36,3 +36,37 @@ person_dict["skills"] = ["python","scala","spark","sql"]
 print(person_dict)
 person_dict["skills"].append("AWS")
 print(person_dict["skills"])
+
+person_dict["age"]=25
+
+#how to get keys from a dictionary
+total_keys=list(person_dict.keys())
+print("Total keys: ",total_keys)
+
+for k,v in person_dict.items():
+    print("key is :",k," and value is :",v)
+
+print('''
+########################################
+#  COMPARE DICTIONARY
+#########################################
+''')
+
+dict3 = {'a':1,"b":4,"c":9}
+dict4={'b':4,'c':9,'a':1}
+print(dict3==dict4)
+
+#how to delete specific key value pair from dictionary
+print('''
+how to delete specific key value pair from dictionary
+''')
+
+print(dict3)
+
+del dict3['a']
+
+print(dict3)
+
+#how to check whether key presents in the dictionary
+
+print('b' in dict3.keys())
