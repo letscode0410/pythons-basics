@@ -115,6 +115,10 @@ print(example_nonkeyed_args(1,5,6))
 print(example_nonkeyed_args(1,5))
 
 
+def get_even_list(*args):
+    return [x for x in args if x%2==0]
+
+print("get_even_list(1,2,3,45,6)",get_even_list(1,2,3,45,6))
 #key value type of arguments
 def example_of_kwargs(**kwargs):
     for k,v in kwargs.items():
@@ -124,6 +128,13 @@ example_of_kwargs(host="localhost",port=9091,pswd="xxx")
 
 
 
-
+def myfunc(*args, **kwargs):
+    if 'fruit' and 'juice' in kwargs:
+        print(f"I like {' and '.join(args)} and my favorite fruit is {kwargs['fruit']}")
+        print(f"May I have some {kwargs['juice']} juice?")
+    else:
+        pass
+        
+myfunc('eggs','spam',fruit='cherries',juice='orange')
 
 
